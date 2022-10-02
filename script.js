@@ -1,8 +1,6 @@
 function getBMI() {
   let height = parseFloat(document.getElementById("form_height").value / 100);
   let weight = parseInt(document.getElementById("form_weight").value);
-  // console.log(height);
-  // console.log(weight);
   let bmi = weight / height ** 2;
   let bmi_rounded = bmi.toFixed(2);
   let report = bmiReport(bmi_rounded);
