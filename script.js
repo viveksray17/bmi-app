@@ -4,8 +4,10 @@ function getBMI() {
   let bmi = weight / height ** 2;
   let bmi_rounded = bmi.toFixed(2);
   let report = bmiReport(bmi_rounded);
-  document.getElementById("exactbmi").textContent = `Your BMI is ${bmi_rounded}`
-  document.getElementById("bmireport").textContent = bmiReport(bmi)
+  document.getElementById(
+    "exactbmi"
+  ).textContent = `Your BMI is ${bmi_rounded}`;
+  document.getElementById("bmireport").textContent = bmiReport(bmi);
 }
 
 function bmiReport(bmi) {
